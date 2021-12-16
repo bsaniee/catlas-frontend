@@ -20,7 +20,7 @@ This project is a book app that allows users to display and save Cats. The app w
     -> Routes
       -> Route |path: "/"|
         -> Index |Props: cats, createCat|
-      -> Route |path="/books/:id|
+      -> Route |path="/cats/:id|
         -> Show |Props: cats, updateCat, deleteCat|
 ```
 
