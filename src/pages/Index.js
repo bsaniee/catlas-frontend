@@ -112,7 +112,7 @@ const Index = (props) => {
                         return (<div key={cat._id} className="cat">
                             <Link to={`/cats/${cat._id}`}>
                                 <img src={cat.image}/>
-                                <div className="book-details">
+                                <div className="cat-details">
                                     <h1>{cat.name}</h1>
                                     <h2>Cat Type {cat.breed}</h2>
                                 </div>
