@@ -6,7 +6,7 @@ import { SliderData } from "./SliderData"
 
 const Main = (props) => {
     const [cats, setCats] = useState(null)
-    const URL = "HEROKU LINK HERE"
+    const URL = "https://catlas-backend2.herokuapp.com/"
 
     //Calls backend API to get Cat List
     const getCats = async () => {
