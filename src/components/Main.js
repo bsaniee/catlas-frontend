@@ -12,8 +12,7 @@ const Main = (props) => {
     const getCats = async () => {
         const response = await fetch(URL, {mode: 'no-cors'});
         console.log(response)
-        let data = await response.json();
-        data = data.body;
+        const data = await JSON.parse(response.body);
         console.log(data)
         setCats(data)
     }
