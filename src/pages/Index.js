@@ -39,7 +39,7 @@ const Index = (props) => {
             <fieldset>
             <legend>Add a new Cat to the Catlas!</legend>
             <div className="flex-pair">
-                <label for="name">Name</label>
+                <label htmlFor="name">Name</label>
                 <input 
                     type="text"
                     value={newForm.name}
@@ -49,7 +49,7 @@ const Index = (props) => {
                 />
             </div>
             <div className="flex-pair">
-                <label for="color">Color</label>
+                <label htmlFor="color">Color</label>
                 <input 
                     type="text"
                     value={newForm.color}
@@ -60,7 +60,7 @@ const Index = (props) => {
             </div>
 
             <div className="flex-pair">
-                <label for="breed">Breed</label>
+                <label htmlFor="breed">Breed</label>
                 <input 
                     type="text"
                     value={newForm.breed}
@@ -71,7 +71,7 @@ const Index = (props) => {
             </div> 
 
             <div className="flex-pair">
-                <label for="image">Cat Photo</label>
+                <label htmlFor="image">Cat Photo</label>
                 <input 
                     type="text"
                     value={newForm.image}
@@ -82,7 +82,7 @@ const Index = (props) => {
             </div>
 
             <div className="flex-pair">
-                <label for="description">Description</label>
+                <label htmlFor="description">Description</label>
                 <input 
                     type="text"
                     value={newForm.description}

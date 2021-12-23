@@ -4,6 +4,7 @@ import { CgChevronRightO } from "react-icons/cg"
 import { CgChevronLeftO } from "react-icons/cg"
 
 const ImageSlider = ({ slides }) => {
+  console.log(SliderData)
   const [current, setCurrent] = useState(0)
   const length = slides.length
   

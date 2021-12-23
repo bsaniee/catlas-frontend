@@ -84,7 +84,7 @@ const Show = (props) => {
                 </fieldset>
                 <div className="form-btns">
                     <input type="submit" value="Update Cat" />
-                    <button id="delete" onClick={removeCat}><i id="trash-can-icon" class="fa fa-trash"></i> Delete Cat</button>
+                    <button id="delete" onClick={removeCat}> Delete Cat</button>
                 </div>
             </form>
         )
