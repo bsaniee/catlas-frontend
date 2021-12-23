@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 const Show = (props) => {
     const navigate = useNavigate();
     const params = useParams();
-    const id = params.id;
+    const id = parseInt(params.id);
     const cats = props.cats;
 
     // state for edit form 
