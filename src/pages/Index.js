@@ -109,8 +109,8 @@ const Index = (props) => {
                         else if (cat.breed.toLowerCase().includes(searchValue.toLowerCase())) return cat
                     })
                     .map((cat) => {
-                        return (<div key={cat._id} className="cat">
-                            <Link to={`/cats/${cat._id}`}>
+                        return (<div key={cat.id} className="cat">
+                            <Link to={`/cats/${cat.id}`}>
                                 <img src={cat.image}/>
                                 <div className="cat-details">
                                     <h1>{cat.name}</h1>
