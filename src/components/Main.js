@@ -24,7 +24,7 @@ const Main = (props) => {
             headers: {
                 "Content-Type": "application/json"
             },
-            body: JSON.stringify()
+            body: JSON.stringify(newCat)
         })
         getCats()
     }
