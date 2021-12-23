@@ -12,7 +12,7 @@ const Main = (props) => {
     const getCats = async () => {
         const response = await fetch(URL);
         console.log(response)
-        const data = await JSON.parse(response.body);
+        const data = await response.json()
         console.log(data)
         setCats(data)
     }
