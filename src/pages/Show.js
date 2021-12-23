@@ -14,14 +14,14 @@ const Show = (props) => {
     useEffect(() => {
         if (props.cats) {
             // grab the specific cat
-            const cat = cats.find((c) => c._id === id)
+            const cat = cats.find((c) => c.id === id)
             setEditForm(cat)
         }
     }, [props.cats])
 
     if (props.cats) {
         // grab the specific cat
-        const cat = cats.find((c) => c._id === id)
+        const cat = cats.find((c) => c.id === id)
 
         // handleChange function for form 
         const handleChange = (event) => {
@@ -33,13 +33,13 @@ const Show = (props) => {
         // handleSubmit function for form 
         const handleSubmit = (event) => {
             event.preventDefault()
-            props.updateCat(editForm, cat._id)
+            props.updateCat(editForm, cat.id)
             navigate("/")
         }
 
         // removes a cat
         const removeCat = () => {
-            props.deleteCat(cat._id)
+            props.deleteCat(cat.id)
             navigate("/")
         }
         const form = (
