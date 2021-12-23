@@ -10,7 +10,7 @@ const Main = (props) => {
 
     //Calls backend API to get Cat List
     const getCats = async () => {
-        const response = await fetch(URL, {mode: 'no-cors'});
+        const response = await fetch(URL);
         console.log(response)
         const data = await JSON.parse(response.body);
         console.log(data)
@@ -20,7 +20,6 @@ const Main = (props) => {
     //Add new cat
     const createCat = async (newCat) => {
         await fetch(URL, {
-            mode: 'no-cors',
             method: "post",
             headers: {
                 "Content-Type": "application/json"
